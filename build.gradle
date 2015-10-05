@@ -1,1 +1,9 @@
-task hello << { println "Hello !"}
+apply plugin: 'groovy'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	compile 'org.codehaus.groovy:groovy-all:2.4.5'
+}
